@@ -74,7 +74,7 @@ const dark = document.getElementById('dark');
 var ttext = document.getElementById('themeOutput');
 
 light.addEventListener("click",function(){
-    test.style.backgroundColor = "c"; 
+    test.style.backgroundColor = "#eff4f5"; 
     test.style.color = "#222"; 
     ttext.textContent= "You choose Light Mode!";
 })
