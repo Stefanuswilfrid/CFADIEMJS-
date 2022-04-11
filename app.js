@@ -46,7 +46,7 @@ function bbfunction(){
 
         //get today's date
         const tday = d.getDate();
-        const tmonth = d.getMonth();
+        const tmonth = d.getMonth()+1;
         const tyear = d.getFullYear();
 
         //calculate the inputted value's age
@@ -55,8 +55,8 @@ function bbfunction(){
         if((tmonth-month)<0 ){
             fyear;
         }
-        else if(((tmonth-month)===0) &&(tday-day<0)){
-     
+        else if((tmonth-month)===0) {
+           (tday-day<0)){
                 fyear--;
             }
         }
