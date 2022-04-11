@@ -55,8 +55,8 @@ function bbfunction(){
         if((tmonth-month)<0 ){
             fyear;
         }
-        else if((tmonth-month)===0){
-            if((tday-day)<0){
+        else if(((tmonth-month)===0) &&(tday-day<0)){
+     
                 fyear--;
             }
         }
