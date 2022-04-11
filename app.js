@@ -53,7 +53,7 @@ function bbfunction(){
         let fyear = tyear-year;
 
         if((tmonth-month)<0 ){
-            fyear--;
+            fyear;
         }
         else if((tmonth-month)===0){
             if((tday-day)<0){
