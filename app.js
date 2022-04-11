@@ -38,7 +38,7 @@ function bbfunction(){
 
         const splitted = (age.value).split('-');
         let d  = new Date();
-
+        
         //year,month and date for 
         let year = splitted[0];
         let month = splitted[1];
@@ -48,15 +48,17 @@ function bbfunction(){
         const tday = d.getDate();
         const tmonth = d.getMonth()+1;
         const tyear = d.getFullYear();
+        
+    
 
         //calculate the inputted value's age
         let fyear = tyear-year;
 
         if((tmonth-month)<0 ){
-            fyear;
+            fyear--;
         }
-        else if((tmonth-month)===0) {
-           (tday-day<0)){
+        else if((tmonth-month)===0){
+            if((tday-day)<0){
                 fyear--;
             }
         }
